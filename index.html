@@ -71,11 +71,12 @@
               <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
                 
-                    <button class="close" data-modal-close>
-                        <img class="close-img" src="/images/close.jpg" 
-                        alt="закриття"
-                        width="18"
-                        height="18"> 
+                    <button class="close" data-modal-close> 
+                        <svg class="close-img" width="18" height="18">
+                          <use
+                            href="./images/close.svg#icon-close">
+                          </use>
+                        </svg>
                     </button>
                 </div>
               </div>
@@ -154,7 +155,7 @@
           <h2 class="box-title">Чим ми займаємося</h2>
 
           <ul class="box">
-            <li>
+            <li class="overlay-link">
               <img
                 class="img-box1"
                 src="images/box1.jpg"
@@ -162,10 +163,10 @@
                 height="294"
                 alt="box1"
               />
-              <div class="text">Десктопні додатки</div>
+              <div class="overlay-box"><p class="overlay-text">десктопні додатки</p></div>
             </li>
 
-            <li>
+            <li class="overlay-link">
               <img
                 class="img-box2"
                 src="images/box2.jpg"
@@ -173,9 +174,10 @@
                 height="294"
                 alt="box3"
               />
+              <div class="overlay-box"><p class="overlay-text">мобільні додатки</p></div>
             </li>
 
-            <li>
+            <li class="overlay-link">
               <img
                 class="img-box3"
                 src="images/box3.jpg"
@@ -183,6 +185,7 @@
                 height="294"
                 alt="box3"
               />
+              <div class="overlay-box"><p class="overlay-text">дизайнерські рішення</p></div>
             </li>
           </ul>
         </div>
